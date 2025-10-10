@@ -7,6 +7,8 @@ document.addEventListener('DOMContentLoaded', function() {
     sections.forEach(section => {
         if (section.id !== 'home') {
             section.style.display = 'none';
+        } else {
+            section.style.display = 'block';
         }
     });
     
