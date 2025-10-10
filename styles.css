@@ -480,6 +480,74 @@ body {
     color: #bdc3c7;
 }
 
+/* Insights Section Styles */
+.insights-section {
+    padding: 40px 0;
+    background-color: white;
+}
+
+.papers-list {
+    max-width: 900px;
+    margin: 30px auto 0;
+    padding: 0 20px;
+}
+
+.paper-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+    padding: 25px;
+    margin-bottom: 15px;
+    background-color: #ffffff;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.paper-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    border-color: #3498db;
+}
+
+.paper-number {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #3498db;
+    min-width: 50px;
+    text-align: center;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 6px;
+}
+
+.paper-content {
+    flex: 1;
+}
+
+.paper-link {
+    text-decoration: none;
+    display: block;
+}
+
+.paper-title {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 8px;
+    transition: color 0.3s ease;
+}
+
+.paper-link:hover .paper-title {
+    color: #3498db;
+}
+
+.paper-meta {
+    font-size: 0.95rem;
+    color: #6c757d;
+    margin: 0;
+}
+
 /* Publications Section Styles */
 .publications-section {
     padding: 40px 0;

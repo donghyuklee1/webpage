@@ -35,8 +35,8 @@ document.addEventListener('DOMContentLoaded', function() {
             if (targetSection) {
                 targetSection.style.display = 'block';
                 
-                // Hide main-content for CV, Photos, Publications, Contact sections
-                if (['cv', 'photos', 'publications', 'contact'].includes(targetId)) {
+                // Hide main-content for CV, Photos, Insights, Contact sections
+                if (['cv', 'photos', 'insights', 'contact'].includes(targetId)) {
                     mainContent.style.display = 'none';
                 } else {
                     mainContent.style.display = 'block';
@@ -113,9 +113,9 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(item);
     });
     
-    // Publication items
-    const publicationItems = document.querySelectorAll('.publication-item');
-    publicationItems.forEach(item => {
+    // Paper items (Insights section)
+    const paperItems = document.querySelectorAll('.paper-item');
+    paperItems.forEach(item => {
         item.style.opacity = '0';
         item.style.transform = 'translateY(20px)';
         item.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
