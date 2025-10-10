@@ -18,9 +18,6 @@ document.addEventListener('DOMContentLoaded', function() {
         if (contactSection) contactSection.style.display = 'none';
     }
     
-    // Initially hide all sections except home
-    hideAllSections();
-    
     // Show only home section initially (main-content + Research Overview)
     if (mainContent) mainContent.style.display = 'block';
     if (homeSection) homeSection.style.display = 'block';

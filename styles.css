@@ -399,7 +399,7 @@ body {
     margin: 0;
     min-height: 100vh;
     height: auto;
-    display: flex;
+    display: none;
     align-items: flex-start;
     justify-content: center;
 }
@@ -424,6 +424,7 @@ body {
 /* Photos Section Styles */
 .photos-section {
     padding: 40px 0;
+    display: none;
 }
 
 .photo-gallery {
@@ -484,6 +485,7 @@ body {
 .insights-section {
     padding: 40px 0;
     background-color: white;
+    display: none;
 }
 
 /* Category Filter */
@@ -715,6 +717,7 @@ body {
 /* Contact Section Styles */
 .contact-section {
     padding: 40px 0;
+    display: none;
 }
 
 .contact-content {
