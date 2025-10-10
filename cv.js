@@ -9,8 +9,8 @@ let scale = 1.5;
 let canvas = document.getElementById('pdfCanvas');
 let ctx = canvas.getContext('2d');
 
-// PDF 파일 경로 (GitHub에 업로드할 파일명으로 변경하세요)
-const PDF_URL = 'cv.pdf';
+// PDF 파일 경로 (GitHub에 업로드된 파일명)
+const PDF_URL = 'CV(Until 2025 October).pdf';
 
 // 페이지 로드 시 PDF 자동 로드
 document.addEventListener('DOMContentLoaded', function() {
@@ -116,7 +116,7 @@ document.getElementById('downloadBtn').addEventListener('click', function() {
         // PDF 파일 다운로드
         const a = document.createElement('a');
         a.href = PDF_URL;
-        a.download = 'cv.pdf';
+        a.download = 'CV(Until 2025 October).pdf';
         document.body.appendChild(a);
         a.click();
         document.body.removeChild(a);
