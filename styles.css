@@ -380,22 +380,24 @@ body {
 .cv-section {
     padding: 0;
     margin: 0;
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
 }
 
 .cv-content {
     width: 100%;
-    height: 100%;
+    height: auto;
     margin: 0;
     padding: 0;
 }
 
 .cv-preview {
     width: 100%;
-    height: 100%;
+    height: 100vh;
+    min-height: 800px;
     background-color: white;
     border-radius: 0;
     box-shadow: none;
@@ -624,8 +626,14 @@ body {
     }
 
     .cv-section {
-        height: 100vh;
+        min-height: 100vh;
+        height: auto;
         padding: 0;
+    }
+    
+    .cv-preview {
+        height: 100vh;
+        min-height: 600px;
     }
     
     .cv-content,
