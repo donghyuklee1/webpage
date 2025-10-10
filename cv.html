@@ -29,18 +29,7 @@
                 <div class="cv-section">
                     <h2>Curriculum Vitae</h2>
                     <div class="pdf-container">
-                        <div class="pdf-upload-area" id="pdfUploadArea">
-                            <div class="upload-content">
-                                <i class="fas fa-file-pdf upload-icon"></i>
-                                <h3>Upload CV PDF</h3>
-                                <p>Click here to upload your CV PDF file</p>
-                                <input type="file" id="pdfInput" accept=".pdf" style="display: none;">
-                                <button class="upload-btn" onclick="document.getElementById('pdfInput').click()">
-                                    Choose File
-                                </button>
-                            </div>
-                        </div>
-                        <div class="pdf-viewer" id="pdfViewer" style="display: none;">
+                        <div class="pdf-viewer" id="pdfViewer">
                             <div class="pdf-controls">
                                 <button id="prevPage" class="control-btn">
                                     <i class="fas fa-chevron-left"></i> Previous
@@ -52,8 +41,27 @@
                                 <button id="downloadBtn" class="control-btn">
                                     <i class="fas fa-download"></i> Download
                                 </button>
+                                <button id="zoomIn" class="control-btn">
+                                    <i class="fas fa-search-plus"></i> Zoom In
+                                </button>
+                                <button id="zoomOut" class="control-btn">
+                                    <i class="fas fa-search-minus"></i> Zoom Out
+                                </button>
                             </div>
                             <canvas id="pdfCanvas"></canvas>
+                        </div>
+                        <div class="pdf-loading" id="pdfLoading" style="display: none;">
+                            <div class="loading-content">
+                                <i class="fas fa-spinner fa-spin loading-icon"></i>
+                                <p>Loading CV...</p>
+                            </div>
+                        </div>
+                        <div class="pdf-error" id="pdfError" style="display: none;">
+                            <div class="error-content">
+                                <i class="fas fa-exclamation-triangle error-icon"></i>
+                                <h3>CV Not Found</h3>
+                                <p>Please upload your CV PDF file to the repository.</p>
+                            </div>
                         </div>
                     </div>
                 </div>

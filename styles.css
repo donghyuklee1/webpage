@@ -246,54 +246,53 @@ body {
     margin: 0 auto;
 }
 
-.pdf-upload-area {
-    border: 2px dashed #3498db;
+.pdf-loading {
+    border: 2px solid #3498db;
     border-radius: 10px;
     padding: 60px 20px;
     background-color: #f8f9fa;
-    cursor: pointer;
-    transition: all 0.3s ease;
 }
 
-.pdf-upload-area:hover {
-    border-color: #2980b9;
-    background-color: #e3f2fd;
-}
-
-.upload-content {
+.loading-content {
     text-align: center;
 }
 
-.upload-icon {
+.loading-icon {
     font-size: 3rem;
     color: #3498db;
     margin-bottom: 20px;
 }
 
-.upload-content h3 {
+.loading-content p {
+    color: #6c757d;
+    font-size: 1.1rem;
+}
+
+.pdf-error {
+    border: 2px solid #e74c3c;
+    border-radius: 10px;
+    padding: 60px 20px;
+    background-color: #fdf2f2;
+}
+
+.error-content {
+    text-align: center;
+}
+
+.error-icon {
+    font-size: 3rem;
+    color: #e74c3c;
+    margin-bottom: 20px;
+}
+
+.error-content h3 {
     font-size: 1.5rem;
     color: #2c3e50;
     margin-bottom: 10px;
 }
 
-.upload-content p {
+.error-content p {
     color: #6c757d;
-    margin-bottom: 20px;
-}
-
-.upload-btn {
-    background-color: #3498db;
-    color: white;
-    border: none;
-    padding: 12px 24px;
-    border-radius: 6px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.upload-btn:hover {
-    background-color: #2980b9;
 }
 
 .pdf-viewer {
@@ -353,18 +352,27 @@ body {
     
     .control-btn {
         width: 100%;
+        margin: 2px 0;
     }
     
     .cv-section h2 {
         font-size: 1.5rem;
     }
     
-    .upload-icon {
+    .loading-icon {
         font-size: 2rem;
     }
     
-    .upload-content h3 {
+    .error-icon {
+        font-size: 2rem;
+    }
+    
+    .error-content h3 {
         font-size: 1.2rem;
+    }
+    
+    .pdf-loading, .pdf-error {
+        padding: 40px 15px;
     }
 }
 
