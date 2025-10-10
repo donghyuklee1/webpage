@@ -44,20 +44,20 @@ document.addEventListener('DOMContentLoaded', function() {
                 if (homeSection) homeSection.style.display = 'block';
             } 
             // Handle CV section
-            else if (targetId === 'cv' && cvSection) {
-                cvSection.style.display = 'flex';
+            else if (targetId === 'cv') {
+                if (cvSection) cvSection.style.display = 'flex';
             }
             // Handle Photos section
-            else if (targetId === 'photos' && photosSection) {
-                photosSection.style.display = 'block';
+            else if (targetId === 'photos') {
+                if (photosSection) photosSection.style.display = 'block';
             }
             // Handle Insights section
-            else if (targetId === 'insights' && insightsSection) {
-                insightsSection.style.display = 'block';
+            else if (targetId === 'insights') {
+                if (insightsSection) insightsSection.style.display = 'block';
             }
             // Handle Contact section
-            else if (targetId === 'contact' && contactSection) {
-                contactSection.style.display = 'block';
+            else if (targetId === 'contact') {
+                if (contactSection) contactSection.style.display = 'block';
             }
             
             // Scroll to top
@@ -137,7 +137,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Category filter functionality
     const filterButtons = document.querySelectorAll('.filter-btn');
-    const paperItems = document.querySelectorAll('.paper-item');
 
     filterButtons.forEach(button => {
         button.addEventListener('click', function() {
