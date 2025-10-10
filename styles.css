@@ -376,6 +376,226 @@ body {
     }
 }
 
+/* CV Section Styles */
+.cv-section {
+    padding: 40px 0;
+}
+
+.cv-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.cv-download {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.cv-download-btn {
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.cv-download-btn:hover {
+    background-color: #2980b9;
+}
+
+.cv-preview {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+/* Photos Section Styles */
+.photos-section {
+    padding: 40px 0;
+}
+
+.photo-gallery {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.photo-item {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.photo-item:hover {
+    transform: translateY(-5px);
+}
+
+.gallery-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.photo-caption {
+    padding: 15px;
+    text-align: center;
+    font-weight: 500;
+    color: #2c3e50;
+}
+
+.photo-placeholder {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f9fa;
+    color: #6c757d;
+}
+
+.photo-placeholder i {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    color: #bdc3c7;
+}
+
+/* Publications Section Styles */
+.publications-section {
+    padding: 40px 0;
+}
+
+.publications-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.publication-item {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+.publication-item h3 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.publication-item ul {
+    margin: 15px 0;
+    padding-left: 20px;
+}
+
+.publication-item li {
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.publication-placeholder {
+    text-align: center;
+    padding: 40px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    color: #6c757d;
+    font-style: italic;
+}
+
+/* Contact Section Styles */
+.contact-section {
+    padding: 40px 0;
+}
+
+.contact-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.contact-info {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px 0;
+}
+
+.contact-item i {
+    font-size: 1.2rem;
+    color: #3498db;
+    margin-right: 15px;
+    width: 20px;
+}
+
+.contact-item span {
+    color: #2c3e50;
+    font-weight: 500;
+}
+
+.contact-social {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.contact-social h3 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    background-color: #f8f9fa;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #2c3e50;
+    transition: background-color 0.3s ease;
+}
+
+.social-link:hover {
+    background-color: #e9ecef;
+}
+
+.social-link i {
+    margin-right: 10px;
+    color: #3498db;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .two-column-layout {
@@ -403,6 +623,22 @@ body {
 
     .research-areas {
         grid-template-columns: 1fr;
+    }
+
+    .photo-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .cv-content,
+    .publications-content,
+    .photo-gallery {
+        padding: 0 15px;
     }
 
     .footer {
