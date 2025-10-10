@@ -378,39 +378,27 @@ body {
 
 /* CV Section Styles */
 .cv-section {
-    padding: 40px 0;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .cv-content {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.cv-download {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.cv-download-btn {
-    display: inline-block;
-    background-color: #3498db;
-    color: white;
-    padding: 12px 24px;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: 500;
-    transition: background-color 0.3s ease;
-}
-
-.cv-download-btn:hover {
-    background-color: #2980b9;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .cv-preview {
+    width: 100%;
+    height: 100%;
     background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-radius: 0;
+    box-shadow: none;
     overflow: hidden;
 }
 
@@ -635,10 +623,19 @@ body {
         gap: 20px;
     }
 
+    .cv-section {
+        height: 100vh;
+        padding: 0;
+    }
+    
     .cv-content,
     .publications-content,
     .photo-gallery {
         padding: 0 15px;
+    }
+    
+    .cv-content {
+        padding: 0;
     }
 
     .footer {
