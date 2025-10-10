@@ -43,9 +43,9 @@
 
                     <div class="right-column">
                         <div class="professional-info">
-                            <p class="title"><strong>Education</strong></p>
-                            <p>◦ <b><a href="https://www.kaist.ac.kr/kr/" class="link">KAIST</a></b>, Electrical Engineering (Undergraduate)</p>
-                            <p>◦ <b>Gyeonggi Buk Science High School</b>, Uijeongbu, Korea (2024)</p>
+                            <p><strong>Education</strong></p>
+                            <p class="title"><b>Alumni, Gyeonggi Buk Science High School, Uijeongbu, Korea</b></p>
+                            <p class="title"><b>Undergraduate student, Electrical Engineering major from <a href="https://www.kaist.ac.kr/kr/" class="link">KAIST</a>, Daejeon, Korea</b></p>
                         </div>
 
                         <div class="bio-section">
@@ -120,103 +120,153 @@
             <h2 class="section-title">Insights</h2>
             <p class="section-intro">Recent papers I've been reading and finding interesting (Last updated: September 2025)</p>
             
+            <!-- Category Filter -->
+            <div class="category-filter">
+                <button class="filter-btn active" data-category="all">All Papers</button>
+                <button class="filter-btn" data-category="machine-learning">Machine Learning</button>
+                <button class="filter-btn" data-category="computer-vision">Computer Vision</button>
+                <button class="filter-btn" data-category="nlp">NLP</button>
+                <button class="filter-btn" data-category="robotics">Robotics</button>
+            </div>
+
             <div class="papers-list">
-                <div class="paper-item">
-                    <div class="paper-number">01</div>
+                <!-- Machine Learning Papers -->
+                <div class="paper-item" data-category="machine-learning">
+                    <div class="paper-number" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">01</div>
                     <div class="paper-content">
                         <a href="https://arxiv.org/abs/2509.07295" target="_blank" class="paper-link">
+                            <div class="paper-header">
+                                <span class="paper-category ml">Machine Learning</span>
+                                <span class="paper-date">Sep 2025</span>
+                            </div>
                             <h3 class="paper-title">arXiv:2509.07295</h3>
-                            <p class="paper-meta">arXiv preprint</p>
+                            <p class="paper-description">Advanced machine learning techniques and algorithms</p>
                         </a>
                     </div>
                 </div>
 
-                <div class="paper-item">
-                    <div class="paper-number">02</div>
+                <div class="paper-item" data-category="computer-vision">
+                    <div class="paper-number" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">02</div>
                     <div class="paper-content">
                         <a href="https://arxiv.org/abs/2509.00997" target="_blank" class="paper-link">
+                            <div class="paper-header">
+                                <span class="paper-category cv">Computer Vision</span>
+                                <span class="paper-date">Sep 2025</span>
+                            </div>
                             <h3 class="paper-title">arXiv:2509.00997</h3>
-                            <p class="paper-meta">arXiv preprint</p>
+                            <p class="paper-description">Image processing and visual recognition systems</p>
                         </a>
                     </div>
                 </div>
 
-                <div class="paper-item">
-                    <div class="paper-number">03</div>
+                <div class="paper-item" data-category="nlp">
+                    <div class="paper-number" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">03</div>
                     <div class="paper-content">
                         <a href="https://arxiv.org/abs/2509.14476" target="_blank" class="paper-link">
+                            <div class="paper-header">
+                                <span class="paper-category nlp">Natural Language Processing</span>
+                                <span class="paper-date">Sep 2025</span>
+                            </div>
                             <h3 class="paper-title">arXiv:2509.14476</h3>
-                            <p class="paper-meta">arXiv preprint</p>
+                            <p class="paper-description">Language models and text understanding</p>
                         </a>
                     </div>
                 </div>
 
-                <div class="paper-item">
-                    <div class="paper-number">04</div>
+                <div class="paper-item" data-category="machine-learning">
+                    <div class="paper-number" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">04</div>
                     <div class="paper-content">
                         <a href="https://arxiv.org/abs/2509.13311" target="_blank" class="paper-link">
+                            <div class="paper-header">
+                                <span class="paper-category ml">Machine Learning</span>
+                                <span class="paper-date">Sep 2025</span>
+                            </div>
                             <h3 class="paper-title">arXiv:2509.13311</h3>
-                            <p class="paper-meta">arXiv preprint</p>
+                            <p class="paper-description">Neural network optimization and training methods</p>
                         </a>
                     </div>
                 </div>
 
-                <div class="paper-item">
-                    <div class="paper-number">05</div>
+                <div class="paper-item" data-category="robotics">
+                    <div class="paper-number" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">05</div>
                     <div class="paper-content">
                         <a href="https://arxiv.org/abs/2509.10414" target="_blank" class="paper-link">
+                            <div class="paper-header">
+                                <span class="paper-category robotics">Robotics & Control</span>
+                                <span class="paper-date">Sep 2025</span>
+                            </div>
                             <h3 class="paper-title">arXiv:2509.10414</h3>
-                            <p class="paper-meta">arXiv preprint</p>
+                            <p class="paper-description">Autonomous systems and robotic control</p>
                         </a>
                     </div>
                 </div>
 
-                <div class="paper-item">
-                    <div class="paper-number">06</div>
+                <div class="paper-item" data-category="computer-vision">
+                    <div class="paper-number" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">06</div>
                     <div class="paper-content">
                         <a href="https://arxiv.org/abs/2509.10446" target="_blank" class="paper-link">
+                            <div class="paper-header">
+                                <span class="paper-category cv">Computer Vision</span>
+                                <span class="paper-date">Sep 2025</span>
+                            </div>
                             <h3 class="paper-title">arXiv:2509.10446</h3>
-                            <p class="paper-meta">arXiv preprint</p>
+                            <p class="paper-description">Visual perception and scene understanding</p>
                         </a>
                     </div>
                 </div>
 
-                <div class="paper-item">
-                    <div class="paper-number">07</div>
+                <div class="paper-item" data-category="machine-learning">
+                    <div class="paper-number" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">07</div>
                     <div class="paper-content">
                         <a href="https://arxiv.org/abs/2508.10922" target="_blank" class="paper-link">
+                            <div class="paper-header">
+                                <span class="paper-category ml">Machine Learning</span>
+                                <span class="paper-date">Aug 2025</span>
+                            </div>
                             <h3 class="paper-title">arXiv:2508.10922</h3>
-                            <p class="paper-meta">arXiv preprint</p>
+                            <p class="paper-description">Deep learning architectures and frameworks</p>
                         </a>
                     </div>
                 </div>
 
-                <div class="paper-item">
-                    <div class="paper-number">08</div>
+                <div class="paper-item" data-category="nlp">
+                    <div class="paper-number" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">08</div>
                     <div class="paper-content">
                         <a href="https://arxiv.org/abs/2509.13310" target="_blank" class="paper-link">
+                            <div class="paper-header">
+                                <span class="paper-category nlp">Natural Language Processing</span>
+                                <span class="paper-date">Sep 2025</span>
+                            </div>
                             <h3 class="paper-title">arXiv:2509.13310</h3>
-                            <p class="paper-meta">arXiv preprint</p>
+                            <p class="paper-description">Transformer models and attention mechanisms</p>
                         </a>
                     </div>
                 </div>
 
-                <div class="paper-item">
-                    <div class="paper-number">09</div>
+                <div class="paper-item" data-category="machine-learning">
+                    <div class="paper-number" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">09</div>
                     <div class="paper-content">
                         <a href="https://arxiv.org/abs/2501.18914" target="_blank" class="paper-link">
+                            <div class="paper-header">
+                                <span class="paper-category ml">Machine Learning</span>
+                                <span class="paper-date">Jan 2025</span>
+                            </div>
                             <h3 class="paper-title">arXiv:2501.18914</h3>
-                            <p class="paper-meta">arXiv preprint</p>
+                            <p class="paper-description">Reinforcement learning and decision making</p>
                         </a>
                     </div>
                 </div>
 
-                <div class="paper-item">
-                    <div class="paper-number">10</div>
+                <div class="paper-item" data-category="computer-vision">
+                    <div class="paper-number" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">10</div>
                     <div class="paper-content">
                         <a href="https://arxiv.org/abs/2508.05004" target="_blank" class="paper-link">
+                            <div class="paper-header">
+                                <span class="paper-category cv">Computer Vision</span>
+                                <span class="paper-date">Aug 2025</span>
+                            </div>
                             <h3 class="paper-title">arXiv:2508.05004</h3>
-                            <p class="paper-meta">arXiv preprint</p>
+                            <p class="paper-description">3D vision and spatial understanding</p>
                         </a>
                     </div>
                 </div>
