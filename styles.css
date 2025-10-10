@@ -69,9 +69,11 @@ body {
 }
 
 .content-card {
-    background-color: #f8f9fa;
-    padding: 40px;
-    border-radius: 8px;
+    background-color: #ffffff;
+    padding: 50px;
+    border-radius: 12px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e9ecef;
 }
 
 .two-column-layout {
@@ -89,13 +91,19 @@ body {
 .profile-image-container {
     width: 100%;
     max-width: 300px;
+    margin-bottom: 20px;
 }
 
 .profile-image {
     width: 100%;
     height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s ease;
+}
+
+.profile-image:hover {
+    transform: scale(1.02);
 }
 
 /* Right Column Content */
@@ -106,9 +114,10 @@ body {
 }
 
 .professional-info .title {
-    margin-bottom: 5px;
-    font-size: 1.1rem;
+    margin-bottom: 8px;
+    font-size: 1.15rem;
     color: #2c3e50;
+    line-height: 1.5;
 }
 
 .link {
@@ -162,7 +171,10 @@ body {
 .awards-section p,
 .education-section p,
 .recruitment-section p {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: #444;
 }
 
 /* Research Overview Section */
@@ -209,7 +221,9 @@ body {
 
 .research-area p {
     color: #555;
-    line-height: 1.6;
+    line-height: 1.7;
+    font-size: 1rem;
+    margin-bottom: 0;
 }
 
 /* Footer */
@@ -607,7 +621,8 @@ body {
     }
 
     .content-card {
-        padding: 20px;
+        padding: 30px 20px;
+        border-radius: 8px;
     }
 
     .research-overview {
