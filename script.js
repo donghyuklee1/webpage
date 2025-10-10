@@ -1,18 +1,26 @@
 // Navigation functionality
 document.addEventListener('DOMContentLoaded', function() {
     const navLinks = document.querySelectorAll('.nav-link');
-    const sections = document.querySelectorAll('section[id]');
-    
-    // Hide all sections except home initially
     const mainContent = document.querySelector('.main-content');
+    const homeSection = document.getElementById('home');
+    const cvSection = document.getElementById('cv');
+    const photosSection = document.getElementById('photos');
+    const insightsSection = document.getElementById('insights');
+    const contactSection = document.getElementById('contact');
     
-    sections.forEach(section => {
-        if (section.id !== 'home') {
-            section.style.display = 'none';
-        } else {
-            section.style.display = 'block';
-        }
-    });
+    // Function to hide all sections
+    function hideAllSections() {
+        if (mainContent) mainContent.style.display = 'none';
+        if (homeSection) homeSection.style.display = 'none';
+        if (cvSection) cvSection.style.display = 'none';
+        if (photosSection) photosSection.style.display = 'none';
+        if (insightsSection) insightsSection.style.display = 'none';
+        if (contactSection) contactSection.style.display = 'none';
+    }
+    
+    // Show home section initially
+    if (mainContent) mainContent.style.display = 'block';
+    if (homeSection) homeSection.style.display = 'block';
     
     // Navigation click handler
     navLinks.forEach(link => {
@@ -24,40 +32,36 @@ document.addEventListener('DOMContentLoaded', function() {
             // Add active class to clicked link
             this.classList.add('active');
             
-            // Hide all sections
-            sections.forEach(section => {
-                section.style.display = 'none';
-            });
+            // Hide all sections first
+            hideAllSections();
             
             // Show target section
             const targetId = this.getAttribute('href').substring(1);
-            const targetSection = document.getElementById(targetId);
-            if (targetSection) {
-                targetSection.style.display = 'block';
-                
-                // Hide main-content for CV, Photos, Insights, Contact sections
-                if (['cv', 'photos', 'insights', 'contact'].includes(targetId)) {
-                    mainContent.style.display = 'none';
-                } else {
-                    mainContent.style.display = 'block';
-                }
-                
-                targetSection.scrollIntoView({ behavior: 'smooth' });
+            
+            // Handle home navigation
+            if (targetId === 'home') {
+                if (mainContent) mainContent.style.display = 'block';
+                if (homeSection) homeSection.style.display = 'block';
+            } 
+            // Handle CV section
+            else if (targetId === 'cv' && cvSection) {
+                cvSection.style.display = 'flex';
             }
-        });
-    });
-    
-    // Smooth scrolling for internal links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-                target.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
+            // Handle Photos section
+            else if (targetId === 'photos' && photosSection) {
+                photosSection.style.display = 'block';
             }
+            // Handle Insights section
+            else if (targetId === 'insights' && insightsSection) {
+                insightsSection.style.display = 'block';
+            }
+            // Handle Contact section
+            else if (targetId === 'contact' && contactSection) {
+                contactSection.style.display = 'block';
+            }
+            
+            // Scroll to top
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         });
     });
 });
