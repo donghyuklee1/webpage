@@ -4,6 +4,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const sections = document.querySelectorAll('section[id]');
     
     // Hide all sections except home initially
+    const mainContent = document.querySelector('.main-content');
+    
     sections.forEach(section => {
         if (section.id !== 'home') {
             section.style.display = 'none';
@@ -32,6 +34,14 @@ document.addEventListener('DOMContentLoaded', function() {
             const targetSection = document.getElementById(targetId);
             if (targetSection) {
                 targetSection.style.display = 'block';
+                
+                // Hide main-content for CV, Photos, Publications, Contact sections
+                if (['cv', 'photos', 'publications', 'contact'].includes(targetId)) {
+                    mainContent.style.display = 'none';
+                } else {
+                    mainContent.style.display = 'block';
+                }
+                
                 targetSection.scrollIntoView({ behavior: 'smooth' });
             }
         });
