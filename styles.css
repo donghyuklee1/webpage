@@ -463,8 +463,18 @@ body {
 .photo-caption {
     padding: 15px;
     text-align: center;
+}
+
+.photo-title {
     font-weight: 500;
     color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.photo-date {
+    font-size: 0.9rem;
+    color: #6c757d;
+    font-style: italic;
 }
 
 .photo-placeholder {
