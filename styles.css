@@ -160,6 +160,7 @@ body {
 /* Text Sections */
 .bio-section,
 .research-section,
+.hobby-section,
 .awards-section,
 .education-section,
 .recruitment-section {
@@ -168,6 +169,7 @@ body {
 
 .bio-section p,
 .research-section p,
+.hobby-section p,
 .awards-section p,
 .education-section p,
 .recruitment-section p {
