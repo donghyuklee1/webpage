@@ -184,7 +184,6 @@ body::before {
 .profile-image {
     width: 100%;
     height: auto;
-    border-radius: 12px;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
     transition: transform 0.3s ease;
 }
