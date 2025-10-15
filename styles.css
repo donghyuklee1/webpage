@@ -15,7 +15,7 @@ body {
     background-repeat: no-repeat;
     letter-spacing: -0.01em;
     position: relative;
-    padding-top: 220px;
+    padding-top: 250px;
 }
 
 body.footer-fixed {
@@ -43,7 +43,7 @@ body::before {
 /* Header Styles */
 .header {
     background-color: rgba(255, 255, 255, 0.9);
-    padding: 30px 0;
+    padding: 40px 0 30px 0;
     margin-bottom: 20px;
     text-align: center;
     backdrop-filter: blur(10px);
@@ -57,12 +57,23 @@ body::before {
     z-index: 1000;
 }
 
-.name {
-    font-size: 3rem;
-    font-weight: 600;
+.header-top {
+    margin-bottom: 30px;
+}
+
+.site-title {
+    font-size: 2.5rem;
+    font-weight: 700;
     color: #2c3e50;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
     letter-spacing: -0.02em;
+}
+
+.site-subtitle {
+    font-size: 1.1rem;
+    color: #6c757d;
+    margin: 0;
+    font-weight: 400;
 }
 
 .navigation {
