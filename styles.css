@@ -342,10 +342,36 @@ body::before {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 .footer-left {
     margin-bottom: 20px;
+}
+
+.footer-right {
+    margin-bottom: 20px;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.contact-detail {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #ffffff;
+    font-size: 0.8rem;
+}
+
+.contact-detail i {
+    font-size: 0.7rem;
+    width: 12px;
 }
 
 .logo-section {
@@ -355,7 +381,7 @@ body::before {
 }
 
 .kaist-logo {
-    height: 60px;
+    height: 40px;
     width: auto;
     filter: brightness(0) invert(1);
 }
