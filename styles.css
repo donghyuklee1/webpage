@@ -946,9 +946,6 @@ body::before {
 .contact-item span {
     color: #2c3e50;
     font-weight: 500;
-    justify-content: center;
-    align-items: center;
-    display: flex;
 }
 
 .contact-social {
@@ -1058,6 +1055,9 @@ body::before {
 
     .footer-content {
         padding: 0 15px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
     }
 
     /* Insights Section Mobile */
