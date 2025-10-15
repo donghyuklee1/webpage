@@ -182,7 +182,7 @@ body::before {
 }
 
 .profile-image {
-    width: 100%;
+    width: 70%;
     height: auto;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
     transition: transform 0.3s ease;
