@@ -110,7 +110,7 @@ body::before {
 .navigation {
     display: flex;
     justify-content: center;
-    gap: 40px;
+    gap: 80px;
     flex-wrap: wrap;
     max-width: 800px;
     margin: 0 auto;
