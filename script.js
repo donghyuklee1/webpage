@@ -8,15 +8,21 @@ document.addEventListener('DOMContentLoaded', function() {
     const insightsSection = document.getElementById('insights');
     const contactSection = document.getElementById('contact');
     
-    // Function to hide all sections
-    function hideAllSections() {
-        if (mainContent) mainContent.style.display = 'none';
-        if (homeSection) homeSection.style.display = 'none';
-        if (cvSection) cvSection.style.display = 'none';
-        if (photosSection) photosSection.style.display = 'none';
-        if (insightsSection) insightsSection.style.display = 'none';
-        if (contactSection) contactSection.style.display = 'none';
-    }
+           // Function to hide all sections
+           function hideAllSections() {
+               if (mainContent) mainContent.style.display = 'none';
+               if (homeSection) homeSection.style.display = 'none';
+               if (cvSection) cvSection.style.display = 'none';
+               if (photosSection) photosSection.style.display = 'none';
+               if (insightsSection) insightsSection.style.display = 'none';
+               if (contactSection) contactSection.style.display = 'none';
+               
+               // Remove footer fixed class for all sections except contact
+               const footer = document.querySelector('.footer');
+               const body = document.querySelector('body');
+               if (footer) footer.classList.remove('fixed');
+               if (body) body.classList.remove('footer-fixed');
+           }
     
     // Show only home section initially (main-content + Research Overview)
     if (mainContent) mainContent.style.display = 'block';
@@ -55,10 +61,15 @@ document.addEventListener('DOMContentLoaded', function() {
             else if (targetId === 'insights') {
                 if (insightsSection) insightsSection.style.display = 'block';
             }
-            // Handle Contact section
-            else if (targetId === 'contact') {
-                if (contactSection) contactSection.style.display = 'block';
-            }
+                   // Handle Contact section
+                   else if (targetId === 'contact') {
+                       if (contactSection) contactSection.style.display = 'block';
+                       // Fix footer for contact section
+                       const footer = document.querySelector('.footer');
+                       const body = document.querySelector('body');
+                       if (footer) footer.classList.add('fixed');
+                       if (body) body.classList.add('footer-fixed');
+                   }
             
             // Scroll to top
             window.scrollTo({ top: 0, behavior: 'smooth' });
