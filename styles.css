@@ -402,6 +402,9 @@ body::before {
 .footer-bottom {
     border-top: 1px solid #444;
     padding-top: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
 .copyright {
@@ -1055,9 +1058,6 @@ body::before {
 
     .footer-content {
         padding: 0 15px;
-        justify-content: center;
-        align-items: center;
-        display: flex;
     }
 
     /* Insights Section Mobile */
