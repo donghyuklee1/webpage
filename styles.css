@@ -221,12 +221,14 @@ body::before {
     color: #2c3e50;
     margin-bottom: 20px;
     letter-spacing: -0.02em;
+    text-align: center;
 }
 
 .section-intro {
     font-size: 1.1rem;
     margin-bottom: 30px;
     color: #555;
+    text-align: center;
 }
 
 .research-areas {
